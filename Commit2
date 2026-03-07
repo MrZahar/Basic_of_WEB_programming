@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <navbar class="navbar1">
+        <div class="container">
+            <ul class="nav1-list">
+                <li class="nav-item"><a href="#" class="nav-link active">Main</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </navbar>
+    <header id="header" class="container"> 
+        <div class="header-container">
+            <div class="avatar"><img src="image/avatar.jpg" alt="Avatar"></div>
+            <h1 class="h1-title">Zahar Karapetian</h1>
+                <ul class="contacts">
+                    <li class="item">+375447726981</li>
+                    <li class="item">zah4r.karapetian@yandex.ru</li>
+                    <li class="item">My Instagram: zahar_696</li>
+                </ul>
+        </div>
+    </header>
+    <navbar class="navbar2">
+        <div class="container">
+            <ul class="nav2-list">
+                <li class="nav-item"><a href="#header">Profile</a></li>
+                <li class="nav-item"><a href="#profile">About Me</a></li>
+                <li class="nav-item"><a href="#experience">Experience</a></li>
+                <li class="nav-item"><a href="#english-level">English Level</a></li>
+            </ul>
+        </div>
+    </navbar>
+    <section id="profile" class="profile">
+        <div class="container">
+            <h2 class="about-me">About Me</h2>
+            <p class="info-about-me">
+                The student of Belarusian-Russian University, 2nd course. With the advent of a new lecture,
+                it becomes interesting to learn something new every time. My goal is getting the
+                higher education.
+            </p>
+        </div>
+    </section>
+</body>
+</html>
