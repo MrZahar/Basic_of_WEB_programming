@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <navbar class="navbar1">
+        <div class="container">
+            <ul class="nav1-list">
+                <li class="nav-item"><a href="#" class="nav-link active">Main</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </navbar>
+    <header id="header" class="container"> 
+        <div class="header-container">
+            <div class="avatar"><img src="image/avatar.jpg" alt="Avatar"></div>
+            <h1 class="h1-title">Zahar Karapetian</h1>
+                <ul class="contacts">
+                    <li class="item">+375447726981</li>
+                    <li class="item">zah4r.karapetian@yandex.ru</li>
+                    <li class="item">My Instagram: zahar_696</li>
+                </ul>
+        </div>
+    </header>
+    <navbar class="navbar2">
+        <div class="container">
+            <ul class="nav2-list">
+                <li class="nav-item"><a href="#header">Profile</a></li>
+                <li class="nav-item"><a href="#profile">About Me</a></li>
+                <li class="nav-item"><a href="#experience">Experience</a></li>
+                <li class="nav-item"><a href="#english-level">English Level</a></li>
+            </ul>
+        </div>
+    </navbar>
+    <section id="profile" class="profile">
+        <div class="container">
+            <h2 class="about-me">About Me</h2>
+            <p class="info-about-me">
+                The student of Belarusian-Russian University, 2nd course. With the advent of a new lecture,
+                it becomes interesting to learn something new every time. My goal is getting the
+                higher education.
+            </p>
+        </div>
+    </section>
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="work-experience">Work Experience</h2>
+            <ul class="experience-info">
+                <li>Writing Program codes on C# using Console Applications;</li>
+                <li>Using С# in development environments such as Windows Form and WPF;</li>
+            </ul>
+            <h2 class="example">For Example:</h2>
+            <p class="code">
+                using System;<br>
+                using System.Collections.Generic;<br>
+                using System.Linq;<br>
+                using System.Text;<br>
+                using System.Threading.Tasks;<br>
+
+                namespace Лаб.раб._14_2_задание<br>
+                {<br>
+                    struct Student<br>
+                    {<br>
+                        public string LastName { get; set; }<br>
+                        public string Group { get; set; }<br>
+                        public int ProgrammingGrade { get; set; }<br>
+                        public int HistoryGrade { get; set; }<br>
+
+                        public Student(string lastName, string group, int programmingGrade, int historyGrade)<br>
+                        {<br>
+                            LastName = lastName;<br>
+                            Group = group;<br>
+                            ProgrammingGrade = programmingGrade;<br>
+                            HistoryGrade = historyGrade;<br>
+                        }<br>
+                    }<br>
+
+                    class Program<br>
+                    {<br>
+                        static List<(Student, string)> GetStudentsWithLowGrades(List<Student> students)<br>
+                        {<br>
+                            var lowGradeStudents = new List<(Student, string)>();<br>
+
+                            foreach (var student in students)<br>
+                            {<br>
+                                if (student.ProgrammingGrade < 3)<br>
+                                    lowGradeStudents.Add((student, "Программирование"));<br>
+                                if (student.HistoryGrade < 3)<br>
+                                    lowGradeStudents.Add((student, "История"));<br>
+                            }<br>
+
+                            return lowGradeStudents;<br>
+                        }<br>
+
+                        static Dictionary<string, double> CalculateAverageGradesByGroup(List<Student> students)<br>
+                        {
+                            return students.GroupBy(s => s.Group)<br>
+                                        .ToDictionary(g => g.Key, g => g.Average(s => (s.ProgrammingGrade + s.HistoryGrade) / 2.0));<br>
+                        }<br>
+
+                        static List<Student> GetTopStudents(List<Student> students, Dictionary<string, double> groupAverages)<br>
+                        {<br>
+                            return students.Where(s =><br>
+                                (s.ProgrammingGrade + s.HistoryGrade) / 2.0 > groupAverages[s.Group]).ToList();<br>
+                        }<br>
+
+                        static List<Student> SortStudentsByAverageGrade(List<Student> students)<br>
+                        {<br>
+                            return students.OrderBy(s => (s.ProgrammingGrade + s.HistoryGrade) / 2.0).ToList();<br>
+                        }<br>
+
+                        static void DisplayMenu()<br>
+                        {<br>
+                            Console.WriteLine("Меню:");<br>
+                            Console.WriteLine("1. Ввод данных о студентах");<br>
+                            Console.WriteLine("2. Вывод студентов с двойками");<br>
+                            Console.WriteLine("3. Средние баллы по группам");<br>
+                            Console.WriteLine("4. Вывод студентов с баллом выше среднего по группе");<br>
+                            Console.WriteLine("5. Сортировка студентов по среднему баллу");<br>
+                            Console.WriteLine("6. Выход");<br>
+                        }<br>
+
+                        static void Main(string[] args)<br>
+                        {<br>
+                            List<Student> students = new List<Student>();<br>
+                            bool exit = false;<br>
+
+                            while (!exit)<br>
+                            {<br>
+                                DisplayMenu();<br>
+                                Console.Write("Выберите пункт меню: ");<br>
+                                int choice = int.Parse(Console.ReadLine());<br>
+
+                                switch (choice)<br>
+                                {<br>
+                                    case 1:<br>
+                                        Console.Write("Введите количество студентов: ");<br>
+                                        int count = int.Parse(Console.ReadLine());<br>
+
+                                        for (int i = 0; i < count; i++)<br>
+                                        {<br>
+                                            Console.WriteLine($"Студент {i + 1}:");<br>
+                                            Console.Write("Введите фамилию: ");<br>
+                                            string lastName = Console.ReadLine();<br>
+                                            Console.Write("Введите группу: ");<br>
+                                            string group = Console.ReadLine();<br>
+                                            Console.Write("Введите оценку по программированию: ");<br>
+                                            int programmingGrade = int.Parse(Console.ReadLine());<br>
+                                            Console.Write("Введите оценку по истории: ");<br>
+                                            int historyGrade = int.Parse(Console.ReadLine());<br>
+
+                                            students.Add(new Student(lastName, group, programmingGrade, historyGrade));<br>
+                                        }<br>
+
+                                        break;<br>
+
+                                    case 2:<br>
+                                        var lowGrades = GetStudentsWithLowGrades(students);<br>
+                                        Console.WriteLine("Студенты с двойками:");<br>
+                                        foreach (var (student, subject) in lowGrades)<br>
+                                        {<br>
+                                            Console.WriteLine($"{student.LastName}, группа {student.Group}, предмет: {subject}");<br>
+                                        }<br>
+
+                                        break;<br>
+
+                                    case 3:<br>
+                                        var groupAverages = CalculateAverageGradesByGroup(students);<br>
+                                        Console.WriteLine("Средние баллы по группам:");<br>
+                                        foreach (var kvp in groupAverages)<br>
+                                        {<br>
+                                            Console.WriteLine($"Группа {kvp.Key}: {kvp.Value:F2}");<br>
+                                        }<br>
+
+                                        break;<br>
+
+                                    case 4:<br>
+                                        var averages = CalculateAverageGradesByGroup(students);<br>
+                                        var topStudents = GetTopStudents(students, averages);<br>
+                                        Console.WriteLine("Студенты с баллом выше среднего по группе:");<br>
+                                        foreach (var student in topStudents)<br>
+                                        {<br>
+                                            Console.WriteLine($"{student.LastName}, группа {student.Group}");<br>
+                                        }<br>
+
+                                        break;<br>
+
+                                    case 5:<br>
+                                        var sortedStudents = SortStudentsByAverageGrade(students);<br>
+                                        Console.WriteLine("Студенты, отсортированные по среднему баллу:");<br>
+                                        foreach (var student in sortedStudents)<br>
+                                        {<br>
+                                            double avg = (student.ProgrammingGrade + student.HistoryGrade) / 2.0;<br>
+                                            Console.WriteLine($"{student.LastName}, группа {student.Group}, средний балл: {avg:F2}");<br>
+                                        }<br>
+
+                                        break;<br>
+
+                                    case 6:<br>
+                                        exit = true;<br>
+                                        break;<br>
+
+                                    default:<br>
+                                        Console.WriteLine("Некорректный ввод, попробуйте снова.");<br>
+                                        break;<br>
+                                }<br>
+                            }<br>
+                        }<br>
+                    }<br>
+                }<br>
+            </p>
+        </div>
+    </section>
+    <footer id="english-level" class="english-level">
+        <div class="container">
+            <h2 class="level">English Level</h2>
+            <ul class="place-of-achieve-level">
+                <li>Language center "Aspect", Mogilev</li>
+                <li>Level: B1</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
