@@ -175,3 +175,6 @@ namespace Лаб.раб._14_2_задание
 }
 ```
 
+## English Level
+- Language Center "Aspect", Mogilev
+- Level: B1
