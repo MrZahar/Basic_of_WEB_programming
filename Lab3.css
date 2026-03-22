@@ -8,3 +8,10 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
 }
+
+.header {
+    background-image: url(images/header_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
