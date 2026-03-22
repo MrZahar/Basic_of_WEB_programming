@@ -267,3 +267,47 @@ location {
     margin-top: 35px;
     background-color: white;
 }
+
+.feed-superhero {
+    margin-top: 107px;
+}
+
+.feed-superhero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.feed-superhero-title1{
+    font-size: 11px;
+    letter-spacing: 1.4px;
+    font-weight: 400;
+    margin-top: 200px;
+}
+
+.feed-superhero-info {
+    padding-left: 74px;
+}
+
+.feed-superhero-title2 {
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0%;
+}
+
+.collaborating {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 81px;
+}
+
+.offering {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.features {
+    font-size: 16px;
+    line-height: 24px;
+    list-style: none;
+}
