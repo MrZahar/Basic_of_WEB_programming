@@ -485,3 +485,34 @@ location {
     margin-top: 20px;
     margin-bottom: 93px;
 }
+
+.empower {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.empower h2 {
+    margin-top: 223px;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.empower p {
+    margin: 0%;
+    margin-top: 46px;
+    font-size: 24px;
+}
+
+.empower button {
+    margin: 0%;
+    margin-top: 40px;
+    width: 278px;
+    height: 63px;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 40px;
+    background-color: white;
+    font-size: 16px;
+    margin-bottom: 196px;
+}
