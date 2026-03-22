@@ -343,3 +343,45 @@ location {
 .fill-out {
     font-size: 16px;
 }
+
+.care-about-kids-info button {
+    margin: 0%;
+    margin-top: 36px;
+    width: 259px;
+    height: 58px;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 40px;
+    background-color: white;
+    font-size: 15px;
+}
+
+.care-about-kids-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.care-about-kids-info {
+    padding-left: 74px;
+}
+
+.care-about-kids-title1 {
+    margin-top: 320px;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+}
+
+.care-about-kids-title2 {
+    margin: 0%;
+    margin-top: 31px;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.care-about-kids-info p {
+    margin-top: 79px;
+    font-size: 16px;
+    line-height: 24px;
+}
