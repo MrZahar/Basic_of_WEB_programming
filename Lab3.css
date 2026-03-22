@@ -56,3 +56,132 @@ body {
     border: none;
     font-size: 15px;
 }
+
+.offer {
+    margin-top: 100px;
+}
+
+.container {
+    max-width: 1052px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lunch-description {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.lunch-photo {
+    display: flex;
+    flex-direction: row;
+}
+
+.lunch-photo img {
+    height: 433px;
+}
+
+.rectangle {
+    height: 433px;
+    width: 380px;
+    background-color: #F3F3E8;
+}
+
+.text-description {
+    align-items: left;
+}
+
+.lunch-name {
+    padding-top: 40px;
+    font-size: 15px;
+}
+
+.name {
+    font-size: 29px;
+    margin: 0%;
+}
+
+.cost {
+    font-size: 19px;
+    margin: 0%;
+    margin-top: 10px;
+}
+
+.marks {
+    display: flex;
+    flex-direction: row;
+    
+    gap: 8px;
+    margin-left: auto;
+}
+
+.average-mark {
+    display: flex;
+    flex-direction: row;
+    /*list-style: none;*/
+    justify-content: start;
+
+}
+.average-mark img {
+    width: 16px;
+}
+
+.number-of-reviews {
+    font-size: 12px;
+}
+
+.choosing {
+    font-size: 15px;
+}
+
+.number-of-lunches {
+    font-size: 15px;
+    color:black;
+}
+
+.buttons {
+    margin-top: 67px;
+    gap: 13px;
+    display: flex;
+    flex-direction: row;
+}
+
+.amount {
+    font-size: 15px;
+    height: 58px;
+    width: 130px;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 40px;
+    background-color: white;
+    letter-spacing: 40px;
+    padding-left: 28px;
+}
+
+.add-to-cart {
+    height: 58px;
+    width: 220px;
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+}
+
+.social-media {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.facebook {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    line-height: 24px;
+}
+
+.facebook img {
+    width: 17px;
+    margin-bottom: 45px;
+}
