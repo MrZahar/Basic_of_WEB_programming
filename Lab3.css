@@ -385,3 +385,53 @@ location {
     font-size: 16px;
     line-height: 24px;
 }
+
+.first-two-main-features {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 102px;
+    gap: 116px;
+}
+
+.perfection {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.delicious-and-healthy {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.perfection h2 {
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.delicious-and-healthy h2 {
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.perfection p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.delicious-and-healthy p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.best-thing {
+    margin-top: 93px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
