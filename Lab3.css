@@ -298,46 +298,54 @@ body {
 }
 
 .feed-superhero {
-    margin-top: 107px;
+    margin-top: 85px;
 }
 
 .feed-superhero-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.feed-superhero-container img{
+    height: 602px;
+    width: 480px;
 }
 
 .feed-superhero-title1{
-    font-size: 11px;
-    letter-spacing: 1.4px;
+    font-size: 9px;
+    letter-spacing: 1px;
     font-weight: 400;
-    margin-top: 200px;
+    margin-top: 92px;
 }
 
 .feed-superhero-info {
-    padding-left: 74px;
+    padding-left: 55px;
+    width: 480px
 }
 
 .feed-superhero-title2 {
-    font-size: 48px;
+    padding-top: 5px;
+    font-size: 38px;
     font-weight: 400;
     margin: 0%;
 }
 
 .collaborating {
-    font-size: 16px;
-    line-height: 24px;
-    margin-top: 81px;
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 58px;
 }
 
 .offering {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 13px;
+    line-height: 20px;
 }
 
 .features {
-    font-size: 16px;
-    line-height: 24px;
+    padding: 0%;
+    font-size: 13px;
+    line-height: 18.5px;
     list-style: none;
 }
 
