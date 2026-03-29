@@ -444,8 +444,8 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 102px;
-    gap: 116px;
+    margin-top: 82px;
+    gap: 100px;
 }
 
 .perfection {
@@ -461,32 +461,42 @@ body {
 }
 
 .perfection h2 {
-    font-size: 29px;
+    font-size: 23px;
     font-weight: 400;
 }
 
 .delicious-and-healthy h2 {
-    font-size: 29px;
+    font-size: 23px;
     font-weight: 400;
 }
 
 .perfection p {
-    font-size: 16px;
+    font-size: 12.8px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 19px;
 }
 
 .delicious-and-healthy p {
-    font-size: 16px;
+    font-size: 12.8px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 19px;
 }
 
 .best-thing {
-    margin-top: 93px;
+    margin-top: 53px;
     justify-content: center;
     text-align: center;
     align-items: center;
+}
+
+.best-thing h2 {
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.best-thing p {
+    font-size: 13px;
+    line-height: 20px;
 }
 
 .super-community {
