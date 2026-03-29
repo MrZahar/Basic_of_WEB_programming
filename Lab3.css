@@ -559,28 +559,27 @@ body {
 }
 
 .empower h2 {
-    margin-top: 223px;
-    font-size: 60px;
+    margin-top: 233px;
+    font-size: 48px;
     font-weight: 400;
 }
 
 .empower p {
-    margin: 0%;
-    margin-top: 46px;
-    font-size: 24px;
+    margin: 0 auto;
+
+    font-size: 19.3px;
 }
 
 .empower button {
     margin: 0%;
-    margin-top: 40px;
-    width: 278px;
-    height: 63px;
+    margin-top: 18px;
+    width: 222px;
+    height: 50px;
     border-color: black;
     border-width: 1px;
     border-radius: 40px;
     background-color: white;
-    font-size: 16px;
-    margin-bottom: 196px;
+    font-size: 12.5px;
 }
 
 .text-footer-div {
