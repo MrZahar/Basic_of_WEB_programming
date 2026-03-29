@@ -500,22 +500,24 @@ body {
 }
 
 .super-community {
+    width: 960px;
     background-color: #306aff;
-    margin-top: 95px;
-    height: 500px;
+    margin-top: 60px;
+    height: 400px;
     background-size: cover;
     text-align: center;
+    justify-self: center;
 }
 
 .super-community h2 {
-    padding-top: 154px;
-    font-size: 12px;
+    padding-top: 126px;
+    font-size: 10px;
     font-weight: 400;
-    letter-spacing: 1.4px;
+    letter-spacing: 1px;
 }
 
 .super-community p {
-    font-size: 48px;
+    font-size: 38.5px;
     font-weight: 400;
     margin: 0%;
 }
