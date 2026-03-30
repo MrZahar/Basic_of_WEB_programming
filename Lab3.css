@@ -304,33 +304,31 @@ body {
 }
 
 .feed-superhero-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 480px 480px; 
+    justify-content: center; 
 }
 
-.feed-superhero-container img{
+.feed-superhero-container img {
     height: 602px;
-    width: 480px;
 }
 
-.feed-superhero-title1{
+.feed-superhero-info {
+    padding-left: 55px;
+}
+
+.feed-superhero-title1 {
     font-size: 9px;
     letter-spacing: 1px;
     font-weight: 400;
     margin-top: 92px;
 }
 
-.feed-superhero-info {
-    padding-left: 55px;
-    width: 480px
-}
-
 .feed-superhero-title2 {
     padding-top: 5px;
     font-size: 38px;
     font-weight: 400;
-    margin: 0%;
+    margin: 0;
 }
 
 .collaborating {
@@ -345,7 +343,7 @@ body {
 }
 
 .features {
-    padding: 0%;
+    padding: 0;
     font-size: 13px;
     line-height: 18.5px;
     list-style: none;
