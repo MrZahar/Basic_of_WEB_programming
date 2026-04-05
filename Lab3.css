@@ -666,3 +666,52 @@ body {
     width: 32px;
     height: 20px;
 }
+
+@media (max-width: 768px) {
+
+    .header {
+        background-image: url(images/header_image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 800px;
+        justify-self: center;
+        align-items: center;
+    }
+    .action {
+        font-size: 11px;
+        letter-spacing: 1.4px;
+        color: white;
+    }
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 235px;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-container h1 {
+        padding-top: 11px;
+        font-size: 56px;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+        margin: 0;
+    }
+    .info-about {
+        padding-top: 9px;
+        font-size: 24px;
+        color: white;
+    }
+    .start-now {
+        margin-top: 12px;
+        width: 250px;
+        height: 60px;
+        border-radius: 40px;
+        background-color: white;
+        color:black;
+        border: none;
+        font-size: 15px;
+        margin-right: 10px;
+    }
+}
