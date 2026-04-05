@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.header {
+    background-image: url(images/header_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 640px;
+    max-width: 960px;
+    justify-self: center;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 193px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container h1 {
+     font-size: 69px;
+     font-weight: 400;
+     color: white;
+     text-align: center;
+     margin: 0;
+}
+
+.action {
+    font-size: 8px;
+    letter-spacing: 1.4px;
+    color: white;
+}
+
+.info-about {
+    padding-top: 5px;
+    font-size: 19px;
+    color: white
+}
+
+.start-now {
+    margin-top: 8px;
+    width: 210px;
+    height: 48px;
+    border-radius: 40px;
+    background-color: white;
+    color:black;
+    border: none;
+    font-size: 12px;
+}
+
+.offer {
+    margin-top: 80px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.lunch-description {
+    display: flex;
+    flex-direction: row;
+}
+
+.lunch-photo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 58px;
+}
+
+.lunch-photo img {
+    height: 348px;
+}
+
+.rectangle {
+    height: 348px;
+    width: 300px;
+    background-color: #F3F3E8;
+}
+
+.text-description {
+    align-items: left;
+    margin-left: 57px;
+}
+
+.lunch-name {
+    padding-top: 17px;
+    font-size: 12px;
+}
+
+.name {
+    font-size: 23px;
+    margin: 0%;
+}
+
+.cost {
+    font-size: 15px;
+    margin: 0%;
+    margin-top: 5px;
+}
+
+.marks {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+    gap: 6px;
+    margin-left: auto;
+}
+
+.average-mark {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 1.5px;
+
+}
+.average-mark img {
+    width: 13px;
+}
+
+.number-of-reviews {
+    font-size: 9.5px;
+}
+
+.choosing {
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.number-of-lunches {
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+    font-size: 12px;
+    color:black;
+}
+
+.buttons {
+    margin-top: 50px;
+    gap: 9px;
+    display: flex;
+    flex-direction: row;
+}
+
+.amount {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    font-size: 13px;
+    height: 46px;
+    width: 104px;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 40px;
+    background-color: white;
+}
+
+.add-to-cart {
+    font-size: 13px;
+    height: 46px;
+    width: 174px;
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+}
+
+.social-media {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.facebook {
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    line-height: 18px;
+}
+
+.facebook img {
+    width: 12px;
+    margin-bottom: 24px;
+}
+
+.facebook p {
+    margin-top: 21px;
+}
+
+.location {
+    margin-top: 107px;
+}
+
+.location-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.location-container img {
+    height: 592px;
+    width: 480px;
+}
+
+.location-info {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 480px;
+}
+
+.location-info h2 {
+    font-size: 8.5px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    margin-top: 180px;
+}
+
+.location-info p {
+    padding-top: 4px;
+}
+
+.address {
+    font-size: 21.5px;
+    margin: 0%;
+}
+
+.not-your-location {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 35px;
+}
+
+.join-waitlist {
+    margin-top: 10px;
+    width: 144px;
+    height: 46px;
+    font-size: 13px;
+    border-radius: 40px;
+    border-width: 1px;
+    border-color: black;
+    background-color: white;
+}
+
+.how-it-works h2 {
+    margin-left: 50px;
+    margin-top: 85px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.cards {
+    margin-left: 50px;
+    margin-top: 33px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.cards img {
+    width: 278px;
+}
+
+.cards h2 {
+    font-size: 18px;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.cards p {
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.step3 button {
+    width: 206px;
+    height: 46px;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 40px;
+    margin-top: 11px;
+    background-color: white;
+    font-size: 12px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.feed-superhero {
+    margin-top: 85px;
+}
+
+.feed-superhero-container {
+    display: grid;
+    grid-template-columns: 480px 480px; 
+    justify-content: center; 
+}
+
+.feed-superhero-container img {
+    height: 602px;
+}
+
+.feed-superhero-info {
+    padding-left: 55px;
+}
+
+.feed-superhero-title1 {
+    font-size: 9px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-top: 92px;
+}
+
+.feed-superhero-title2 {
+    padding-top: 5px;
+    font-size: 38px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.collaborating {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 58px;
+}
+
+.offering {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.features {
+    padding: 0;
+    font-size: 13px;
+    line-height: 18.5px;
+    list-style: none;
+}
+
+.special-child-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.special-child-container img {
+    width: 480px;
+    height: 602px;
+}
+
+.special-child-info {
+    padding-left: 55px;
+    width: 480px;
+}
+
+.special-child-title1 {
+    margin-top: 177px;
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.special-child-title2 {
+    margin: 0%;
+    padding-top: 3px;
+    font-size: 22.5px;
+    font-weight: 400;
+}
+
+.customizing {
+    margin-top: 40px;
+    font-size: 12.8px;
+    line-height: 19px;
+}
+
+.fill-out {
+    font-size: 13px;
+}
+
+.care-about-kids-info button {
+    margin: 0%;
+    margin-top: 12px;
+    text-align: left;
+    padding-left: 23px;
+    width: 210px;
+    height: 46px;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 40px;
+    background-color: white;
+    font-size: 12px;
+}
+
+.care-about-kids-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.care-about-kids-container img {
+    height: 602px;
+    width: 480px;
+}
+
+.care-about-kids-info {
+    width: 480px;
+    padding-left: 55px;
+}
+
+.care-about-kids-title1 {
+    margin-top: 178px;
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.care-about-kids-title2 {
+    margin: 0%;
+    margin-top: 9px;
+    font-size: 38px;
+    font-weight: 400;
+}
+
+.care-about-kids-info p {
+    margin-top: 55px;
+    font-size: 12.8px;
+    line-height: 19.5px;
+}
+
+.first-two-main-features {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 82px;
+    gap: 100px;
+}
+
+.perfection {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.delicious-and-healthy {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.perfection h2 {
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.delicious-and-healthy h2 {
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.perfection p {
+    font-size: 12.8px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.delicious-and-healthy p {
+    font-size: 12.8px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.best-thing {
+    margin-top: 53px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.best-thing h2 {
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.best-thing p {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.super-community {
+    width: 960px;
+    background-color: #306aff;
+    margin-top: 60px;
+    height: 400px;
+    background-size: cover;
+    text-align: center;
+    justify-self: center;
+}
+
+.super-community h2 {
+    padding-top: 126px;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.super-community p {
+    font-size: 38.5px;
+    font-weight: 400;
+    margin: 0%;
+}
+
+.help {
+    width: 960px;
+    margin-left: 452px;
+}
+
+.help h2 {
+    margin-top: 85px;
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.p1 {
+    font-size: 38.5px;
+    letter-spacing: 0.48px;
+    margin: 0%;
+    margin-top: 14px;
+}
+
+.post {
+    font-size: 12.8px;
+    margin-top: 53px;
+}
+
+.p2 {
+    font-size: 12px;
+    margin-top: 16px;
+    margin-bottom: 93px;
+}
+
+.empower {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.empower h2 {
+    margin-top: 233px;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.empower p {
+    margin: 0 auto;
+
+    font-size: 19.3px;
+}
+
+.empower button {
+    margin: 0%;
+    margin-top: 18px;
+    width: 222px;
+    height: 50px;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 40px;
+    background-color: white;
+    font-size: 12.5px;
+}
+
+.footer {
+    max-width: 960px;
+}
+
+.text-footer-div {
+    margin-top: 230px;
+    margin-left: 336px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-title {
+    font-size: 12.8px;
+    font-weight: 400;
+}
+
+.footer-div1 p {
+    font-size: 12.8px;
+    margin-top: 18px;
+    line-height: 19px;
+}
+
+.footer-div1 img {
+    margin-top: 10px;
+    width: 80px;
+}
+
+.footer-social {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+}
+
+.footer-social img {
+    width: 15px;
+}
+
+.footer-div2 {
+    margin-left: 100px;
+}
+
+.footer-div2 p {
+    font-size: 12px;
+}
+
+.footer-div3 {
+    margin-left: 75px;
+}
+
+.stay-tuned {
+    font-size: 12.8px;
+}
+
+.sign-up {
+    font-size: 12.8px;
+    margin-top: 16px;
+    line-height: 20px;
+}
+
+.footer-div4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-div4 p {
+    margin-top: 87px;
+    font-size: 10.5px;
+    margin-left: 336px;
+}
+
+.footer-cards {
+    padding-top: 72px;
+    margin-right: 336px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.footer-cards img {
+    width: 32px;
+    height: 20px;
+}
