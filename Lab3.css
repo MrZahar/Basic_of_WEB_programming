@@ -894,4 +894,57 @@ body {
     .facebook p {
         margin-top: 21px;
     } 
+    .location {
+        margin: 0%;
+        justify-self: center;
+    }
+
+    .location-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .location-container img {
+        margin: 0 auto;
+        margin-top: 50px;
+        height: 400px;
+        width: 320px;
+    }
+
+    .location-info {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .location-info h2 {
+        font-size: 11px;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+        margin: 0 auto;
+        margin-top: 68px;
+    }
+    .location-info p {
+        padding-top: 19px;
+        line-height: 24px;
+    }
+    .address {
+        font-size: 18px;
+        margin: 0%;
+    }
+    .not-your-location {
+        display: none;
+    }
+
+    .join-waitlist {
+        margin-top: 46px;
+        width: 174px;
+        height: 56px;
+        font-size: 15px;
+        margin-left: 10px;
+        border-radius: 40px;
+        border-width: 1px;
+        border-color: black;
+        background-color: white;
+    }
 }
