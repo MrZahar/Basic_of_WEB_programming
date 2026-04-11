@@ -1304,7 +1304,7 @@ body {
         background-image: url(images/header-image-for-smartphone-version.png);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 800px;
+        height: 570px;
         justify-self: center;
         align-items: center;
     }
@@ -1317,12 +1317,12 @@ body {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-        padding-top: 197px;
+        padding-top: 104px;
         justify-content: center;
         align-items: center;
     }
     .header-container h1 {
-        padding-top: 30px;
+        padding-top: 5px;
         font-size: 44px;
         line-height: 56px;
         font-weight: 400;
@@ -1332,7 +1332,7 @@ body {
         margin: 0;
     }
     .info-about {
-        padding-top: 60px;
+        padding-top: 18px;
         font-size: 18px;
         color: white;
         text-align: center;
@@ -1341,7 +1341,7 @@ body {
         line-height: 24px;
     }
     .start-now {
-        margin-top: 72px;
+        margin-top: 26px;
         width: 250px;
         height: 60px;
         border-radius: 40px;
