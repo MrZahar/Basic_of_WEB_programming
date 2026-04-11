@@ -1659,5 +1659,298 @@ body {
 .fill-out {
     font-size: 16px;
 }
-    
+    .care-about-kids-info button {
+    margin: 0%;
+    margin-top: 28px;
+    text-align: left;
+    padding-left: 33px;
+    width: 260px;
+    height: 60px;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 40px;
+    background-color: white;
+    font-size: 15px;
+}
+
+.care-about-kids-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.care-about-kids-container img {
+    margin-top: 64px;
+    height: 400px;
+    width: 320px;
+}
+
+.care-about-kids-info {
+    padding-left: 15px;
+}
+
+.care-about-kids-title1 {
+    margin-top: 66px;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+}
+
+.care-about-kids-title2 {
+    margin: 0%;
+    margin-top: 16px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.care-about-kids-info p {
+    width: 264px;
+    margin-top: 52px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.first-two-main-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.mark img {
+    width: 24px;
+}
+
+.perfection {
+    margin: 0%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.delicious-and-healthy {
+    margin-top: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.perfection h2 {
+    margin: 0%;
+    margin-top: 10px;
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.delicious-and-healthy h2 {
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.perfection p {
+    margin: 0%;
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.delicious-and-healthy p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.best-thing {
+    margin: 0%;
+    margin-top: 32px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.best-thing h2 {
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.best-thing p {
+    font-size: 16px;
+    line-height: 24px;
+}
+.super-community {
+    width: 320px;
+    background-color: #306aff;
+    margin-top: 55px;
+    height: 258px;
+    background-size: cover;
+    text-align: center;
+    justify-self: center;
+}
+
+.super-community h2 {
+    padding-top: 100px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+}
+
+.super-community p {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0%;
+    padding-top: 4px;
+}
+.help {
+    width: 320px;
+    margin-left: 20px;
+}
+
+.help h2 {
+    margin-top: 82px;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+}
+
+.p1 {
+    font-size: 18px;
+    letter-spacing: 0.48px;
+    margin: 0%;
+    margin-top: 18px;
+}
+
+.post {
+    font-size: 16px;
+    margin-top: 58px;
+}
+
+.p2 {
+    font-size: 15px;
+    margin-top: 26px;
+    margin-bottom: 93px;
+}
+.empower {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.empower h2 {
+    margin-top: 60px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.empower p {
+    padding-top: 12px;
+    margin: 0 auto;
+    font-size: 22px;
+    width: 258px;
+}
+
+.empower button {
+    margin: 0%;
+    margin-top: 36px;
+    width: 258px;
+    height: 58px;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 40px;
+    background-color: white;
+    font-size: 15px;
+}
+.footer {
+    max-width: 320px;
+}
+
+.text-footer-div {
+    margin: 0%;
+    margin-top: 92px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title {
+    width: 165px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.footer-div1 p {
+    font-size: 16px;
+    margin-top: 30px;
+    line-height: 24px;
+}
+
+.footer-div1 img {
+    margin-top: 10px;
+    width: 100px;
+}
+
+.footer-social {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+}
+
+.footer-social img {
+    width: 20px;
+}
+
+.footer-div2 {
+    margin: 0%;
+    margin-top: 70px;
+}
+
+.footer-div2 p {
+    font-size: 16px;
+    margin-top: 1px;
+}
+
+.footer-div3 {
+    margin: 0%;
+    margin-top: 40px;
+}
+
+.stay-tuned {
+    font-size: 16px;
+}
+
+.sign-up {
+    font-size: 16px;
+    width: 226px;
+    margin-top: 26px;
+    line-height: 24px;
+}
+
+.footer-div4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-div4 p {
+    width: 169px;
+    margin: 0%;
+    margin-left: 20px;
+    margin-top: 50px;
+    font-size: 13px;
+}
+
+.footer-cards {
+    padding-top: 58px;
+    padding-left: 134px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.footer-cards img {
+    width: 40px;
+    height: 25px;
+}
+
+}
 }
