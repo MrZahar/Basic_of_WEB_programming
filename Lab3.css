@@ -714,6 +714,137 @@ body {
         font-size: 15px;
         margin-right: 10px;
     }
+    .lunch-description {
+        display: flex;
+        flex-direction: column;
+    }
+
+.lunch-photo {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: row;
+}
+
+.lunch-photo img {
+    height: 433px;
+}
+
+.rectangle {
+    height: 433px;
+    width: 380px;
+    background-color: #F3F3E8;
+}
+
+.text-description {
+    align-items: left;
+}
+
+.lunch-name {
+    padding-top: 30px;
+    font-size: 15px;
+}
+
+.name {
+    font-size: 28.5px;
+    margin: 0%;
+}
+
+.cost {
+    font-size: 19px;
+    margin: 0%;
+    margin-top: 10px;
+}
+
+.marks {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    gap: 13px;
+    margin-left: auto;
+}
+
+.average-mark {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 1.5px;
+
+}
+.average-mark img {
+    width: 15.5px;
+}
+
+.number-of-reviews {
+    font-size: 12px;
+}
+
+.choosing {
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.number-of-lunches {
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+    font-size: 15px;
+    color:black;
+}
+
+.buttons {
+    margin-top: 50px;
+    gap: 9px;
+    display: flex;
+    flex-direction: row;
+}
+
+.amount {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    font-size: 15px;
+    height: 60px;
+    width: 134px;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 40px;
+    background-color: white;
+}
+
+.add-to-cart {
+    font-size: 15px;
+    height: 60px;
+    width: 220px;
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+}
+
+.social-media {
+    padding-top: 2px;
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+}
+
+.facebook {
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    line-height: 24px;
+}
+
+.facebook img {
+    width: 16px;
+    margin-bottom: 24px;
+}
+
+.facebook p {
+    margin-top: 21px;
+}
 }
 
 @media (max-width: 320px) {
