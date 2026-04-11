@@ -1208,6 +1208,94 @@ body {
     background-color: white;
     font-size: 15px;
 }
+    .footer {
+    max-width: 768px;
+}
+
+.text-footer-div {
+    margin: 0%;
+    margin-top: 98px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-div1 p {
+    font-size: 16px;
+    margin-top: 24px;
+    line-height: 24px;
+}
+
+.footer-div1 img {
+    margin-top: 10px;
+    width: 100px;
+}
+
+.footer-social {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+}
+
+.footer-social img {
+    width: 20px;
+}
+
+.footer-div2 {
+    margin: 0%;
+    margin-top: 72px;
+}
+
+.footer-div2 p {
+    font-size: 16px;
+    margin-top: 1px;
+}
+
+.footer-div3 {
+    margin: 0%;
+    margin-top: 56px;
+}
+
+.stay-tuned {
+    font-size: 16px;
+}
+
+.sign-up {
+    font-size: 16px;
+    margin-top: 26px;
+    line-height: 24px;
+}
+
+.footer-div4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-div4 p {
+    margin: 0%;
+    margin-left: 60px;
+    margin-top: 40px;
+    font-size: 13px;
+}
+
+.footer-cards {
+    padding-top: 72px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.footer-cards img {
+    width: 32px;
+    height: 20px;
+}
+
 }
 
 @media (max-width: 320px) {
