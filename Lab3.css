@@ -1028,6 +1028,55 @@ body {
 .fill-out {
     font-size: 16px;
 }
+    .care-about-kids-info button {
+    margin: 0%;
+    margin-top: 18px;
+    text-align: left;
+    padding-left: 33px;
+    width: 260px;
+    height: 60px;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 40px;
+    background-color: white;
+    font-size: 15px;
+}
+
+.care-about-kids-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.care-about-kids-container img {
+    margin-top: 104px;
+    height: 960px;
+    width: 768px;
+}
+
+.care-about-kids-info {
+    padding-left: 60px;
+}
+
+.care-about-kids-title1 {
+    margin-top: 112px;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+}
+
+.care-about-kids-title2 {
+    margin: 0%;
+    margin-top: 18px;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.care-about-kids-info p {
+    width: 448px;
+    margin-top: 64px;
+    font-size: 16px;
+    line-height: 24px;
+}
 }
 
 @media (max-width: 320px) {
