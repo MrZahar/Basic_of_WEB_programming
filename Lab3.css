@@ -1077,6 +1077,57 @@ body {
     font-size: 16px;
     line-height: 24px;
 }
+    .perfection {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.delicious-and-healthy {
+    margin-top: 15px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.perfection h2 {
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.delicious-and-healthy h2 {
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.perfection p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.delicious-and-healthy p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.best-thing {
+    margin: 0%;
+    margin-top: 15px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.best-thing h2 {
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.best-thing p {
+    font-size: 16px;
+    line-height: 24px;
+}
 }
 
 @media (max-width: 320px) {
