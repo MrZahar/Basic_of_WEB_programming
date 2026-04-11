@@ -1487,7 +1487,7 @@ body {
 
     .location-container img {
         margin: 0 auto;
-        margin-top: 50px;
+        margin-top: 70px;
         height: 400px;
         width: 320px;
     }
@@ -1503,10 +1503,12 @@ body {
         font-weight: 400;
         letter-spacing: 1.4px;
         margin: 0 auto;
-        margin-top: 68px;
+        margin-top: 43px;
+        margin-right: 120px;
     }
     .location-info p {
-        padding-top: 19px;
+        padding-right: 132px;
+        padding-top: 36px;
         line-height: 24px;
     }
     .address {
@@ -1518,10 +1520,11 @@ body {
     }
 
     .join-waitlist {
-        margin-top: 46px;
-        width: 174px;
-        height: 56px;
-        font-size: 15px;
+        margin-top: 70px;
+        margin-right: 140px;
+        width: 177px;
+        height: 58px;
+        font-size: 16px;
         margin-left: 10px;
         border-radius: 40px;
         border-width: 1px;
