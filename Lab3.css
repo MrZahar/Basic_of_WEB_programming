@@ -845,6 +845,57 @@ body {
 .facebook p {
     margin-top: 21px;
 }
+    .location {
+        margin: 0%;
+        justify-self: center;
+    }
+
+    .location-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .location-container img {
+        margin: 0 auto;
+        margin-top: 102px;
+        height: 950px;
+        width: 768px;
+    }
+
+    .location-info {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 134px;
+    }
+
+    .location-info h2 {
+        font-size: 11px;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+        margin: 0 auto;
+        margin-top: 98px;
+    }
+
+    .address {
+        font-size: 27px;
+        margin: 0%;
+        margin-top: 18px;
+    }
+
+.not-your-location {
+    display: none;
+}
+.join-waitlist {
+    margin-top: 108px;
+    width: 180px;
+    height: 60px;
+    font-size: 15px;
+    border-radius: 40px;
+    border-width: 1px;
+    border-color: black;
+    background-color: white;
+}
 }
 
 @media (max-width: 320px) {
