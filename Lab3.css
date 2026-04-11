@@ -1619,4 +1619,45 @@ body {
     line-height: 24px;
     list-style: none;
 }
+    .special-child-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+.special-child-container img {
+    margin-top: 54px;
+    width: 320px;
+    height: 400px;
+}
+
+.special-child-info {
+    padding-left: 15px;
+}
+
+.special-child-title1 {
+    margin-top: 64px;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+}
+
+.special-child-title2 {
+    margin: 0%;
+    padding-top: 8px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.customizing {
+    width: 264px;
+    margin-top: 50px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.fill-out {
+    font-size: 16px;
+}
+    
 }
