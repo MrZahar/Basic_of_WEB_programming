@@ -1531,4 +1531,40 @@ body {
         border-color: black;
         background-color: white;
     }
+    .cards {
+    margin-left: 10px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards img {
+    width: 264px;
+}
+
+    .cards h2 {
+        font-size: 22px;
+        margin: 0;
+        margin-top: 22px;
+    }
+
+    .cards p {
+        font-size: 16px;
+        line-height: 24px;
+        width: 264px;
+    }
+
+    .step3 button {
+        width: 259px;
+        height: 58px;
+        border-color: black;
+        border-width: 1px;
+        border-radius: 40px;
+        margin-top: 11px;
+        background-color: white;
+        font-size: 15px;
+        text-align: left;
+        padding-left: 30px;
+    }
 }
