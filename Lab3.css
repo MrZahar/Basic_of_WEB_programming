@@ -101,6 +101,19 @@ h1, h2, h3, p, button, a {
     justify-content: center;
 }
 
+.lunch-photo:hover {
+    animation: rotateClockwise 0.5s ease-in-out forwards;
+}
+
+@keyframes rotateClockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
 .lunch-photo img {
     width: 250px;
     height: auto;
