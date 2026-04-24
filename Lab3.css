@@ -356,6 +356,12 @@ h1, h2, h3, p, button, a {
     font-weight: 400;
     width: 260px;
     height: 58px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.step3 button:hover {
+    transform: scale(1.05); 
 }
 
 .feed-superhero {
