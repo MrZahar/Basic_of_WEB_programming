@@ -422,6 +422,21 @@ h1, h2, h3, p, button, a {
     margin-top: 20px;
     font-weight: 400;
     color: black;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 5px;
+    display: inline-block; 
+}
+
+.fill-out::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
 }
 
 .care-about-kids {
