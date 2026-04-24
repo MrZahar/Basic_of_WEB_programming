@@ -1,1956 +1,834 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-*, *::after, *::before {
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-}
-
-.header {
-    background-image: url(images/header_image.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 640px;
-    max-width: 960px;
-    justify-self: center;
-    align-items: center;
-}
-
-.header-container {
-    display: flex;
-    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1200px;
     margin: 0 auto;
-    padding-top: 193px;
-    justify-content: center;
+    background-color: #fff;
+    color: #1a2a3a;
+    line-height: 1.4;
+
+}
+
+/* Typography */
+h1, h2, h3, p, button, a {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header Section with Background Image */
+.header {
+    background: url('images/header_image.png');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    display: flex;
     align-items: center;
-}
-
-.header-container h1 {
-     font-size: 69px;
-     font-weight: 400;
-     color: white;
-     text-align: center;
-     margin: 0;
-}
-
-.action {
-    font-size: 8px;
-    letter-spacing: 1.4px;
+    justify-content: center;
+    text-align: center;
     color: white;
 }
 
+.header-container {
+    max-width: 1100px;
+    padding: 0 20px;
+}
+
+.header-container .action {
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+.header-container h1 {
+    font-size: 86px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
 .info-about {
-    padding-top: 5px;
-    font-size: 19px;
-    color: white
+    font-size: 24px;
+    color: white;
+    margin-bottom: 30px;
 }
 
 .start-now {
-    margin-top: 8px;
-    width: 210px;
-    height: 48px;
-    border-radius: 40px;
     background-color: white;
-    color:black;
     border: none;
-    font-size: 12px;
+    padding: 14px 32px;
+    border-radius: 40px;
+    color: black;
+    font-weight: 400;
+    font-size: 15px;
+    width: 260px;
+    height: 58px;
 }
 
+/* Offer Section with Rectangle */
 .offer {
-    margin-top: 80px;
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
+    background-color: white;
+    padding: 60px 40px;
 }
 
 .lunch-description {
     display: flex;
-    flex-direction: row;
-}
-
-.lunch-photo {
-    display: flex;
-    flex-direction: row;
-    margin-left: 58px;
-}
-
-.lunch-photo img {
-    height: 348px;
-}
-
-.rectangle {
-    height: 348px;
-    width: 300px;
-    background-color: #F3F3E8;
-}
-
-.text-description {
-    align-items: left;
-    margin-left: 57px;
-}
-
-.lunch-name {
-    padding-top: 17px;
-    font-size: 12px;
-}
-
-.name {
-    font-size: 23px;
-    margin: 0%;
-}
-
-.cost {
-    font-size: 15px;
-    margin: 0%;
-    margin-top: 5px;
-}
-
-.marks {
-    display: flex;
-    flex-direction: row;
-    margin-top: 8px;
-    gap: 6px;
-    margin-left: auto;
-}
-
-.average-mark {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 1.5px;
-
-}
-.average-mark img {
-    width: 13px;
-}
-
-.number-of-reviews {
-    font-size: 9.5px;
-}
-
-.choosing {
-    font-size: 12px;
-    padding-top: 10px;
-}
-
-.number-of-lunches {
-    display: flex;
-    flex-direction: row;
-    gap: 23px;
-    font-size: 12px;
-    color:black;
-}
-
-.buttons {
-    margin-top: 50px;
-    gap: 9px;
-    display: flex;
-    flex-direction: row;
-}
-
-.amount {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
     gap: 50px;
-    font-size: 13px;
-    height: 46px;
-    width: 104px;
-    border-color: black;
-    border-width: 1px;
-    border-radius: 40px;
-    background-color: white;
-}
-
-.add-to-cart {
-    font-size: 13px;
-    height: 46px;
-    width: 174px;
-    border-radius: 40px;
-    background-color: black;
-    color: white;
-}
-
-.social-media {
-    padding-top: 5px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.facebook {
-    font-size: 13px;
-    display: flex;
-    flex-direction: row;
-    gap: 7px;
-    line-height: 18px;
-}
-
-.facebook img {
-    width: 12px;
-    margin-bottom: 24px;
-}
-
-.facebook p {
-    margin-top: 21px;
-}
-
-.location {
-    margin-top: 107px;
-}
-
-.location-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.location-container img {
-    height: 592px;
-    width: 480px;
-}
-
-.location-info {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 480px;
-}
-
-.location-info h2 {
-    font-size: 8.5px;
-    font-weight: 400;
-    letter-spacing: 1.4px;
-    margin-top: 180px;
-}
-
-.location-info p {
-    padding-top: 4px;
-}
-
-.address {
-    font-size: 21.5px;
-    margin: 0%;
-}
-
-.not-your-location {
-    font-size: 13px;
-    line-height: 20px;
-    margin-top: 35px;
-}
-
-.join-waitlist {
-    margin-top: 10px;
-    width: 144px;
-    height: 46px;
-    font-size: 13px;
-    border-radius: 40px;
-    border-width: 1px;
-    border-color: black;
-    background-color: white;
-}
-
-.how-it-works h2 {
-    margin-left: 50px;
-    margin-top: 85px;
-    font-size: 22px;
-    font-weight: 400;
-}
-
-.cards {
-    margin-left: 50px;
-    margin-top: 33px;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
-
-.cards img {
-    width: 278px;
-}
-
-.cards h2 {
-    font-size: 18px;
-    margin: 0;
-    margin-top: 15px;
-}
-
-.cards p {
-    font-size: 13px;
-    line-height: 19px;
-}
-
-.step3 button {
-    width: 206px;
-    height: 46px;
-    border-color: black;
-    border-width: 1px;
-    border-radius: 40px;
-    margin-top: 11px;
-    background-color: white;
-    font-size: 12px;
-    text-align: left;
-    padding-left: 20px;
-}
-
-.feed-superhero {
-    margin-top: 85px;
-}
-
-.feed-superhero-container {
-    display: grid;
-    grid-template-columns: 480px 480px; 
-    justify-content: center; 
-}
-
-.feed-superhero-container img {
-    height: 602px;
-}
-
-.feed-superhero-info {
-    padding-left: 55px;
-}
-
-.feed-superhero-title1 {
-    font-size: 9px;
-    letter-spacing: 1px;
-    font-weight: 400;
-    margin-top: 92px;
-}
-
-.feed-superhero-title2 {
-    padding-top: 5px;
-    font-size: 38px;
-    font-weight: 400;
-    margin: 0;
-}
-
-.collaborating {
-    font-size: 13px;
-    line-height: 20px;
-    margin-top: 58px;
-}
-
-.offering {
-    font-size: 13px;
-    line-height: 20px;
-}
-
-.features {
-    padding: 0;
-    font-size: 13px;
-    line-height: 18.5px;
-    list-style: none;
-}
-
-.special-child-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.special-child-container img {
-    width: 480px;
-    height: 602px;
-}
-
-.special-child-info {
-    padding-left: 55px;
-    width: 480px;
-}
-
-.special-child-title1 {
-    margin-top: 177px;
-    font-size: 9px;
-    font-weight: 400;
-    letter-spacing: 1px;
-}
-
-.special-child-title2 {
-    margin: 0%;
-    padding-top: 3px;
-    font-size: 22.5px;
-    font-weight: 400;
-}
-
-.customizing {
-    margin-top: 40px;
-    font-size: 12.8px;
-    line-height: 19px;
-}
-
-.fill-out {
-    font-size: 13px;
-}
-
-.care-about-kids-info button {
-    margin: 0%;
-    margin-top: 12px;
-    text-align: left;
-    padding-left: 23px;
-    width: 210px;
-    height: 46px;
-    border-color: black;
-    border-width: 1px;
-    border-radius: 40px;
-    background-color: white;
-    font-size: 12px;
-}
-
-.care-about-kids-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.care-about-kids-container img {
-    height: 602px;
-    width: 480px;
-}
-
-.care-about-kids-info {
-    width: 480px;
-    padding-left: 55px;
-}
-
-.care-about-kids-title1 {
-    margin-top: 178px;
-    font-size: 9px;
-    font-weight: 400;
-    letter-spacing: 1px;
-}
-
-.care-about-kids-title2 {
-    margin: 0%;
-    margin-top: 9px;
-    font-size: 38px;
-    font-weight: 400;
-}
-
-.care-about-kids-info p {
-    margin-top: 55px;
-    font-size: 12.8px;
-    line-height: 19.5px;
-}
-
-.first-two-main-features {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 82px;
-    gap: 100px;
-}
-
-.perfection {
-    justify-content: center;
-    text-align: center;
+    flex-wrap: wrap;
     align-items: center;
 }
-
-.delicious-and-healthy {
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-.perfection h2 {
-    font-size: 23px;
-    font-weight: 400;
-}
-
-.delicious-and-healthy h2 {
-    font-size: 23px;
-    font-weight: 400;
-}
-
-.perfection p {
-    font-size: 12.8px;
-    font-weight: 400;
-    line-height: 19px;
-}
-
-.delicious-and-healthy p {
-    font-size: 12.8px;
-    font-weight: 400;
-    line-height: 19px;
-}
-
-.best-thing {
-    margin-top: 53px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-.best-thing h2 {
-    font-size: 23px;
-    font-weight: 400;
-}
-
-.best-thing p {
-    font-size: 13px;
-    line-height: 20px;
-}
-
-.super-community {
-    width: 960px;
-    background-color: #306aff;
-    margin-top: 60px;
-    height: 400px;
-    background-size: cover;
-    text-align: center;
-    justify-self: center;
-}
-
-.super-community h2 {
-    padding-top: 126px;
-    font-size: 10px;
-    font-weight: 400;
-    letter-spacing: 1px;
-}
-
-.super-community p {
-    font-size: 38.5px;
-    font-weight: 400;
-    margin: 0%;
-}
-
-.help {
-    width: 960px;
-    margin-left: 452px;
-}
-
-.help h2 {
-    margin-top: 85px;
-    font-size: 9px;
-    font-weight: 400;
-    letter-spacing: 1px;
-}
-
-.p1 {
-    font-size: 38.5px;
-    letter-spacing: 0.48px;
-    margin: 0%;
-    margin-top: 14px;
-}
-
-.post {
-    font-size: 12.8px;
-    margin-top: 53px;
-}
-
-.p2 {
-    font-size: 12px;
-    margin-top: 16px;
-    margin-bottom: 93px;
-}
-
-.empower {
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-.empower h2 {
-    margin-top: 233px;
-    font-size: 48px;
-    font-weight: 400;
-}
-
-.empower p {
-    margin: 0 auto;
-
-    font-size: 19.3px;
-}
-
-.empower button {
-    margin: 0%;
-    margin-top: 18px;
-    width: 222px;
-    height: 50px;
-    border-color: black;
-    border-width: 1px;
-    border-radius: 40px;
-    background-color: white;
-    font-size: 12.5px;
-}
-
-.footer {
-    max-width: 960px;
-}
-
-.text-footer-div {
-    margin-top: 230px;
-    margin-left: 336px;
-    display: flex;
-    flex-direction: row;
-}
-
-.footer-title {
-    font-size: 12.8px;
-    font-weight: 400;
-}
-
-.footer-div1 p {
-    font-size: 12.8px;
-    margin-top: 18px;
-    line-height: 19px;
-}
-
-.footer-div1 img {
-    margin-top: 10px;
-    width: 80px;
-}
-
-.footer-social {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    gap: 23px;
-}
-
-.footer-social img {
-    width: 15px;
-}
-
-.footer-div2 {
-    margin-left: 100px;
-}
-
-.footer-div2 p {
-    font-size: 12px;
-}
-
-.footer-div3 {
-    margin-left: 75px;
-}
-
-.stay-tuned {
-    font-size: 12.8px;
-}
-
-.sign-up {
-    font-size: 12.8px;
-    margin-top: 16px;
-    line-height: 20px;
-}
-
-.footer-div4 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.footer-div4 p {
-    margin-top: 87px;
-    font-size: 10.5px;
-    margin-left: 336px;
-}
-
-.footer-cards {
-    padding-top: 72px;
-    margin-right: 336px;
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-}
-
-.footer-cards img {
-    width: 32px;
-    height: 20px;
-}
-
-@media (max-width: 768px) {
-
-    .header {
-        background-image: url(images/header_image.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 800px;
-        justify-self: center;
-        align-items: center;
-    }
-    .action {
-        font-size: 11px;
-        letter-spacing: 1.4px;
-        color: white;
-    }
-    .header-container {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        padding-top: 235px;
-        justify-content: center;
-        align-items: center;
-    }
-    .header-container h1 {
-        padding-top: 11px;
-        font-size: 56px;
-        font-weight: 400;
-        color: white;
-        text-align: center;
-        margin: 0;
-    }
-    .info-about {
-        padding-top: 9px;
-        font-size: 24px;
-        color: white;
-    }
-    .start-now {
-        margin-top: 12px;
-        width: 250px;
-        height: 60px;
-        border-radius: 40px;
-        background-color: white;
-        color:black;
-        border: none;
-        font-size: 15px;
-        margin-right: 10px;
-    }
-    .lunch-description {
-        display: flex;
-        flex-direction: column;
-    }
 
 .lunch-photo {
-    margin-top: 22px;
+    position: relative;
+    height: auto;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .lunch-photo img {
-    height: 433px;
+    width: 250px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    display: block;
 }
 
 .rectangle {
+    position: absolute;
+    width: 630px;
     height: 433px;
-    width: 380px;
     background-color: #F3F3E8;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
 }
 
 .text-description {
-    align-items: left;
+    flex: 1;
 }
 
 .lunch-name {
-    padding-top: 30px;
-    font-size: 15px;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .name {
-    font-size: 28.5px;
-    margin: 0%;
+    font-size: 29px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 10px;
 }
 
 .cost {
     font-size: 19px;
-    margin: 0%;
-    margin-top: 10px;
+    font-weight: 400;
+    margin: 15px 0;
 }
 
 .marks {
     display: flex;
-    flex-direction: row;
-    margin-top: 16px;
-    gap: 13px;
-    margin-left: auto;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.average-mark {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 1.5px;
-
-}
-.average-mark img {
-    width: 15.5px;
+.average-mark img, .mark img {
+    width: 18px;
+    height: 18px;
 }
 
 .number-of-reviews {
+    color: black;
     font-size: 12px;
 }
 
 .choosing {
-    font-size: 15px;
-    padding-top: 5px;
+    font-weight: 400;
+    margin: 15px 0 10px;
 }
 
 .number-of-lunches {
     display: flex;
-    flex-direction: row;
-    gap: 27px;
-    font-size: 15px;
-    color:black;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.number-of-lunches a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
 }
 
 .buttons {
-    margin-top: 50px;
-    gap: 9px;
     display: flex;
-    flex-direction: row;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
 }
 
 .amount {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    gap: 50px;
-    font-size: 15px;
-    height: 60px;
-    width: 134px;
-    border-color: black;
+    background: white;
     border-width: 1px;
+    border-color: black;
+    padding: 10px 26px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    font-size: 20px;
     border-radius: 40px;
-    background-color: white;
+    width: 130px;
+    height: 58px;
 }
 
 .add-to-cart {
-    font-size: 15px;
-    height: 60px;
-    width: 220px;
-    border-radius: 40px;
     background-color: black;
     color: white;
+    border: none;
+    font-size: 15px;
+    padding: 10px 30px;
+    border-radius: 40px;
+    font-weight: 400;
+    width: 220px;
+    height: 58px;
 }
 
 .social-media {
-    padding-top: 2px;
     display: flex;
-    flex-direction: row;
-    gap: 9px;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .facebook {
-    font-size: 15px;
     display: flex;
-    flex-direction: row;
-    gap: 10px;
-    line-height: 24px;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
 }
 
 .facebook img {
-    width: 16px;
-    margin-bottom: 24px;
+    width: 17px;
 }
 
-.facebook p {
-    margin-top: 21px;
+.location {
+    background-color: white;
+    padding: 60px 40px;
 }
-    .location {
-        margin: 0%;
-        justify-self: center;
-    }
 
-    .location-container {
-        display: flex;
-        flex-direction: column;
-    }
+.location-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-    .location-container img {
-        margin: 0 auto;
-        margin-top: 102px;
-        height: 950px;
-        width: 768px;
-    }
+.location-info h2 {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 11px;
+    letter-spacing: 1.4px;
+    font-weight: 400;
+}
 
-    .location-info {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-left: 134px;
-    }
-
-    .location-info h2 {
-        font-size: 11px;
-        font-weight: 400;
-        letter-spacing: 1.4px;
-        margin: 0 auto;
-        margin-top: 98px;
-    }
-
-    .address {
-        font-size: 27px;
-        margin: 0%;
-        margin-top: 18px;
-    }
+.address {
+    font-size: 27px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
 
 .not-your-location {
     display: none;
 }
+
 .join-waitlist {
-    margin-top: 108px;
-    width: 180px;
-    height: 60px;
-    font-size: 15px;
-    border-radius: 40px;
+    background-color: white;
     border-width: 1px;
     border-color: black;
-    background-color: white;
+    padding: 12px 28px;
+    border-radius: 40px;
+    font-weight: 400;
 }
-    .how-it-works h2 {
-    margin-left: 65px;
-    margin-top: 105px;
+
+.location-container img {
+    max-width: 100%;
+    flex: 1;
+}
+
+/* How It Works - White Background */
+.how-it-works {
+    background-color: white;
+    padding: 60px 40px;
+    text-align: left;
+}
+
+.how-it-works h2 {
     font-size: 28px;
+    margin-bottom: 40px;
     font-weight: 400;
 }
 
 .cards {
-    margin-left: 1px;
-    margin-top: 45px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.cards img {
-    width: 610px;
+.step1, .step2, .step3 {
+    flex: 1;
+   /* width: 347px;*/
+    text-align: left;
 }
 
-.cards h2 {
-    font-size: 36px;
-    margin: 0;
-    margin-top: 30px;
-}
-
-.cards p {
-    font-size: 28px;
-    line-height: 40px;
+.step1 img, .step2 img, .step3 img {
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 .step3 button {
-    margin: 0%;
-    width: 260px;
-    height: 60px;
+    background-color: white;
     border-color: black;
     border-width: 1px;
+    padding: 10px 20px;
     border-radius: 40px;
-    background-color: white;
+    margin-top: 15px;
     font-size: 15px;
-    text-align: left;
-    padding-left: 30px;
+    font-weight: 400;
+    width: 260px;
+    height: 58px;
 }
-    .feed-superhero {
-    margin: 0%;
+
+.feed-superhero {
+    background-color: white;
 }
 
 .feed-superhero-container {
     display: flex;
-    flex-direction: column;
-}
-
-.feed-superhero-container img {
-    height: 960px;
-    margin-top: 110px;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .feed-superhero-info {
-    padding-left: 64px;
+    flex: 1;
+    width: 50%;
 }
 
 .feed-superhero-title1 {
     font-size: 11px;
-    letter-spacing: 1.4px;
     font-weight: 400;
-    margin-top: 82px;
+    letter-spacing: 1.4px;
+    margin-bottom: 15px;
 }
 
 .feed-superhero-title2 {
-    padding-top: 5px;
-    font-size: 48px;
+    font-size: 28px;
     font-weight: 400;
-    margin: 0;
-}
-
-.collaborating {
-    font-size: 16px;
-    line-height: 24px;
-    margin-top: 70px;
-}
-
-.offering {
-    font-size: 16px;
-    line-height: 24px;
+    margin-bottom: 20px;
 }
 
 .features {
-    padding: 0;
-    font-size: 16px;
-    line-height: 24px;
     list-style: none;
+    margin-top: 20px;
 }
+
+.features li {
+    font-weight: 400;
+}
+
+.feed-superhero-container img {
+    flex: 1;
+    width: 50%;
+    max-width: 100%;
+}
+
+/* Special Child - White Background */
+.special-child {
+    background-color: white;
+}
+
 .special-child-container {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .special-child-container img {
-    margin-top: 88px;
-    width: 768px;
-    height: 960px;
+    width: 100%;
 }
 
 .special-child-info {
-    padding-left: 60px;
+    width: 100%;
 }
 
 .special-child-title1 {
-    margin-top: 114px;
-    font-size: 11px;
     font-weight: 400;
+    color: black;
+    font-size: 11px;
     letter-spacing: 1.4px;
+    margin-bottom: 15px;
 }
 
 .special-child-title2 {
-    margin: 0%;
-    padding-top: 8px;
-    font-size: 28px;
     font-weight: 400;
-}
-
-.customizing {
-    width: 455px;
-    margin-top: 50px;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 28px;
+    color: black;
+    margin-bottom: 20px;
 }
 
 .fill-out {
-    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 400;
+    color: black;
 }
-    .care-about-kids-info button {
-    margin: 0%;
-    margin-top: 18px;
-    text-align: left;
-    padding-left: 33px;
-    width: 260px;
-    height: 60px;
-    border-color: black;
-    border-width: 1px;
-    border-radius: 40px;
+
+.care-about-kids {
     background-color: white;
-    font-size: 15px;
 }
 
 .care-about-kids-container {
     display: flex;
-    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.care-about-kids-container img {
-    margin-top: 104px;
-    height: 960px;
-    width: 768px;
-}
-
-.care-about-kids-info {
-    padding-left: 60px;
+.fb50 {
+    flex: 1;
+    width: 50%;
 }
 
 .care-about-kids-title1 {
-    margin-top: 112px;
+    color: black;
     font-size: 11px;
-    font-weight: 400;
     letter-spacing: 1.4px;
+    margin-bottom: 15px;
+    font-weight: 400;
 }
 
 .care-about-kids-title2 {
-    margin: 0%;
-    margin-top: 18px;
     font-size: 48px;
+    color: black;
+    margin-bottom: 20px;
     font-weight: 400;
 }
 
-.care-about-kids-info p {
-    width: 448px;
-    margin-top: 64px;
+.care-about-kids p {
     font-size: 16px;
     line-height: 24px;
 }
-    .perfection {
+
+.care-about-kids button {
+    background-color: white;
+    border-width: 1px;
+    border-color: black;
+    padding: 12px 28px;
+    border-radius: 40px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    width: 260px;
+    height: 58px;
+}
+
+.first-two-main-features {
+    background-color: white;
+    display: flex;
+    gap: 40px;
+    padding: 60px 40px 30px;
+    flex-wrap: wrap;
     justify-content: center;
+}
+
+.perfection, .delicious-and-healthy, .best-thing {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    flex: 1;
+    min-width: 250px;
     text-align: center;
-    align-items: center;
 }
 
-.delicious-and-healthy {
-    margin-top: 15px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-.perfection h2 {
-    font-size: 29px;
-    font-weight: 400;
-}
-
-.delicious-and-healthy h2 {
-    font-size: 29px;
-    font-weight: 400;
-}
-
-.perfection p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-.delicious-and-healthy p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-}
 .best-thing {
-    margin: 0%;
-    margin-top: 15px;
-    justify-content: center;
+    background-color: white;
+    margin: 0 40px 40px;
     text-align: center;
-    align-items: center;
 }
 
-.best-thing h2 {
-    font-size: 29px;
-    font-weight: 400;
+.mark {
+    margin-bottom: 15px;
 }
 
-.best-thing p {
-    font-size: 16px;
-    line-height: 24px;
-}
-    .super-community {
-    width: 768px;
-    background-color: #306aff;
-    margin-top: 80px;
+/* Super Community */
+.super-community {
+    background-color: #306AFF;
+    color: black;
+    text-align: center;
+    padding: 153px 20px;
     height: 500px;
-    background-size: cover;
-    text-align: center;
-    justify-self: center;
 }
 
 .super-community h2 {
-    padding-top: 166px;
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 1.4px;
+    margin-bottom: 15px;
 }
 
 .super-community p {
     font-size: 48px;
-    font-weight: 400;
-    margin: 0%;
-    padding-top: 4px;
 }
-    .help {
-    width: 768px;
-    margin-left: 62px;
+
+.help {
+    background-color: white;
+    text-align: left;
+    padding: 107px 90px;
 }
 
 .help h2 {
-    margin-top: 92px;
     font-size: 11px;
-    font-weight: 400;
     letter-spacing: 1.4px;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: 400;
 }
 
 .p1 {
-    font-size: 36px;
+    font-weight: 400;
+    color: black;
+    font-size: 48px;
     letter-spacing: 0.48px;
-    margin: 0%;
-    margin-top: 14px;
 }
 
 .post {
+    font-weight: 400;
+    color: black;
+    margin: 15px 0;
     font-size: 16px;
-    margin-top: 77px;
 }
 
 .p2 {
+    font-weight: 400;
     font-size: 15px;
-    margin-top: 26px;
-    margin-bottom: 93px;
 }
-    .empower {
-    justify-content: center;
+
+.empower {
+    background-color: white;
     text-align: center;
-    align-items: center;
+    padding: 214px 20px;
+    height: 633px;
 }
 
 .empower h2 {
-    margin-top: 180px;
-    font-size: 55px;
+    font-size: 60px;
+    color: black;
+    margin-bottom: 15px;
     font-weight: 400;
 }
 
 .empower p {
-    margin: 0 auto;
     font-size: 24px;
+    color: black;
+    margin-bottom: 15px;
 }
 
 .empower button {
-    margin: 0%;
-    margin-top: 36px;
-    width: 258px;
-    height: 58px;
-    border-color: black;
-    border-width: 1px;
-    border-radius: 40px;
-    background-color: white;
     font-size: 15px;
+    background-color: white;
+    border-width: 1px;
+    border-color: black;
+    padding: 14px 32px;
+    border-radius: 40px;
+    margin-top: 25px;
+    font-weight: 400;
+    width: 278px;
+    height: 58px;
 }
-    .footer {
-    max-width: 768px;
+
+footer {
+    background-color: white;
+    color: #1a2a3a;
+    padding: 50px 40px 20px;
 }
 
 .text-footer-div {
-    margin: 0%;
-    margin-top: 98px;
-    margin-left: 60px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
 }
 
 .footer-title {
+    color: black;
     font-size: 16px;
+    margin-bottom: 15px;
     font-weight: 400;
 }
 
-.footer-div1 p {
-    font-size: 16px;
-    margin-top: 24px;
-    line-height: 24px;
-}
-
-.footer-div1 img {
-    margin-top: 10px;
-    width: 100px;
-}
-
-.footer-social {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    gap: 28px;
-}
-
-.footer-social img {
-    width: 20px;
-}
-
-.footer-div2 {
-    margin: 0%;
-    margin-top: 72px;
+.footer-div1 p, .footer-div2 p, .footer-div3 p {
+    margin-bottom: 12px;
+    color: black;
 }
 
 .footer-div2 p {
-    font-size: 16px;
-    margin-top: 1px;
+    cursor: pointer;
 }
 
-.footer-div3 {
-    margin: 0%;
-    margin-top: 56px;
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
 }
 
 .stay-tuned {
-    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 15px;
 }
 
 .sign-up {
-    font-size: 16px;
-    margin-top: 26px;
-    line-height: 24px;
+    color: black;
 }
 
 .footer-div4 {
     display: flex;
-    flex-direction: column;
-}
-
-.footer-div4 p {
-    margin: 0%;
-    margin-left: 60px;
-    margin-top: 40px;
-    font-size: 13px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 30px;
+    font-size: 12px;
+    color: black;
 }
 
 .footer-cards {
-    padding-top: 72px;
     display: flex;
-    flex-direction: row;
-    gap: 5px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .footer-cards img {
-    width: 32px;
-    height: 20px;
+    height: 25px;
 }
 
-}
-
-@media (max-width: 320px) {
+/* ========== RESPONSIVE: 768px ========== */
+@media (max-width: 768px) {
+    body {
+        max-width: 100%;
+    }
 
     .header {
-        background-image: url(images/header-image-for-smartphone-version.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 570px;
-        justify-self: center;
-        align-items: center;
-    }
-    .action {
-        font-size: 11px;
-        letter-spacing: 1.4px;
-        color: white;
-    }
-    .header-container {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        padding-top: 104px;
-        justify-content: center;
-        align-items: center;
-    }
-    .header-container h1 {
-        padding-top: 5px;
-        font-size: 44px;
-        line-height: 56px;
-        font-weight: 400;
-        height: 168px;
-        color: white;
-        text-align: center;
-        margin: 0;
-    }
-    .info-about {
-        padding-top: 18px;
-        font-size: 18px;
-        color: white;
-        text-align: center;
-        height: 48px;
-        width: 280px;
-        line-height: 24px;
-    }
-    .start-now {
-        margin-top: 26px;
-        width: 250px;
-        height: 60px;
-        border-radius: 40px;
-        background-color: white;
-        color:black;
-        border: none;
-        font-size: 15px;
-        margin-right: 10px;
-    }
-    .lunch-description {
-        display: flex;
-        flex-direction: column;
-    }
-    .lunch-photo {
-        margin: 0%;
-        margin-left: 29px;
-    }
-    .lunch-photo img{
-        margin-right: 70px;
-        height: 433px;
-        width: 250px;
-    }
-    .text-description {
-        margin: 0%;
-        align-items: left;
-        margin-left: 29px;
+        height: 800px;
     }
 
-    .lunch-name {
-        padding-top: 18px;
-        font-size: 15px;
+    .header-container h1 {
+        font-size: 56px;
     }
 
     .name {
-        font-size: 25px;
-        margin: 0%;
+        font-size: 28px;
+    }
+
+    .lunch-description {
+        align-items: start;
+    }
+
+    .feed-superhero-title2, .special-child-title2, .care-about-kids-title2 {
+        font-size: 30px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rectangle {
+        display: none;
+    }
+
+    .how-it-works h2 {
+        text-align: center;
+    }
+
+    .step1 h2, .step2 h2, .step3 h2 {
+        text-align: left;
+    }
+
+    .location-container {
+        flex-direction: column;
+    }
+
+    .special-child-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .special-child-info {
+        order: 1;
+    }
+    
+    .special-child-container img {
+        order: 2;
+    }
+
+    .text-footer-div {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-div4 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .first-two-main-features {
+        flex-direction: column;
+    }
+
+    .best-thing {
+        margin: 0 20px 40px;
+    }
+
+    .offer, .location, .how-it-works, .feed-superhero, .special-child, .care-about-kids {
+        padding: 40px 20px;
+    }
+
+    .lunch-description {
+        flex-direction: column;
+    }
+
+    /* 50% split becomes stacked on tablet */
+    .feed-superhero-container,
+    .special-child-container,
+    .care-about-kids-container {
+        flex-direction: column;
+    }
+
+    .feed-superhero-info,
+    .feed-superhero-container img,
+    .special-child-info,
+    .special-child-container img,
+    .fb50 {
+        width: 100%;
+    }
+}
+
+/* ========== RESPONSIVE: 320px ========== */
+@media (max-width: 320px) {
+    .body {
+        width: 100%;
+    }
+    .header {
+        height: 570px;
+    }
+
+    .header-container h1 {
+        font-size: 28px;
+    }
+
+    .info-about {
+        font-size: 14px;
+    }
+
+    .start-now, .join-waitlist, .add-to-cart, .care-about-kids button, .empower button, .step3 button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    .rectangle {
+        display: none;
+    }
+
+    .name {
+        font-size: 24px;
     }
 
     .cost {
-        font-size: 19px;
-        margin: 0%;
-        margin-top: 13px;
+        font-size: 22px;
     }
 
-    .marks {
-        display: flex;
-        flex-direction: row;
-        margin-top: 10px;
-        gap: 13px;
-        margin-left: auto;
+    
+    .buttons {
+        flex-direction: column;
     }
 
-    .average-mark {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        gap: 1.5px;
-    }
-    .average-mark img {
-        width: 15.5px;
-    }
-
-    .number-of-reviews {
-        font-size: 11.5px;
-    }
-
-    .choosing {
-        font-size: 15px;
-        padding-top: 3px;
+    .social-media {
+        flex-wrap: wrap;
     }
 
     .number-of-lunches {
-        display: flex;
         flex-direction: column;
-        gap: 14px;
-        font-size: 15px;
-        color:black;
+        gap: 8px;
     }
 
     .buttons {
-        margin-top: 38px;
-        gap: 9px;
-        display: flex;
         flex-direction: column;
     }
 
     .amount {
-        display: flex;
-        flex-direction: row;
         justify-content: center;
-        text-align: center;
-        gap: 70px;
-        font-size: 12px;
-        height: 58px;
-        width: 130px;
-        border-color: black;
-        border-width: 1px;
-        border-radius: 40px;
-        background-color: white;
     }
 
-    .add-to-cart {
+    .feed-superhero-title2, .special-child-title2, .care-about-kids-title2 {
+        font-size: 24px;
+    }
+
+    .special-child-title2, .feed-superhero-title2 {
+        line-height: 1.2;
+    }
+
+    .features li {
+        font-size: 14px;
+    }
+
+    .super-community h2 {
+        font-size: 24px;
+    }
+
+    .empower h2 {
+        font-size: 28px;
+    }
+
+    .help .p1 {
+        font-size: 14px;
+    }
+
+    .post {
+        font-size: 14px;
+    }
+
+    .p2 {
         font-size: 16px;
-        height: 58px;
-        width: 216px;
-        border-radius: 40px;
-        background-color: black;
-        color: white;
     }
 
-    .social-media {
-        padding-top: 15px;
-        display: flex;
-        flex-direction: row;
-        gap: 13px;
-    }
-
-    .facebook {
-        font-size: 15px;
-        display: flex;
-        flex-direction: row;
-        gap: 9px;
-        line-height: 22px;
-    }
-
-    .facebook img {
-        width: 16px;
-        margin-bottom: 24px;
-    }
-
-    .facebook p {
-        margin-top: 21px;
-    } 
-    .location {
-        margin: 0%;
-        justify-self: center;
-    }
-
-    .location-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .location-container img {
-        margin: 0 auto;
-        margin-top: 70px;
-        height: 400px;
-        width: 320px;
-    }
-
-    .location-info {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .location-info h2 {
-        font-size: 11px;
-        font-weight: 400;
-        letter-spacing: 1.4px;
-        margin: 0 auto;
-        margin-top: 43px;
-        margin-right: 120px;
-    }
-    .location-info p {
-        padding-right: 132px;
-        padding-top: 36px;
-        line-height: 24px;
-    }
-    .address {
+    .footer-title {
         font-size: 18px;
-        margin: 0%;
-    }
-    .not-your-location {
-        display: none;
     }
 
-    .join-waitlist {
-        margin-top: 70px;
-        margin-right: 140px;
-        width: 177px;
-        height: 58px;
-        font-size: 16px;
-        margin-left: 10px;
-        border-radius: 40px;
-        border-width: 1px;
-        border-color: black;
-        background-color: white;
-    }
-    .cards {
-    margin-left: 10px;
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.cards img {
-    width: 264px;
-}
-
-    .cards h2 {
-        font-size: 22px;
-        margin: 0;
-        margin-top: 22px;
+    .footer-cards img {
+        height: 20px;
     }
 
-    .cards p {
-        font-size: 16px;
-        line-height: 24px;
-        width: 264px;
+    .header, .offer, .location, .how-it-works, .feed-superhero, .special-child, .care-about-kids {
+        padding: 30px 15px;
     }
 
-    .step3 button {
-        width: 259px;
-        height: 58px;
-        border-color: black;
-        border-width: 1px;
-        border-radius: 40px;
-        margin-top: 11px;
-        background-color: white;
-        font-size: 15px;
-        text-align: left;
-        padding-left: 30px;
+    .step1, .step2, .step3 {
+        padding: 15px;
     }
-    .feed-superhero {
-    margin: 0%;
-}
 
-.feed-superhero-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.feed-superhero-container img {
-    height: 400px;
-    margin-top: 70px;
-}
-
-.feed-superhero-info {
-    padding-left: 15px;
-}
-
-.feed-superhero-title1 {
-    font-size: 11px;
-    letter-spacing: 1.4px;
-    font-weight: 400;
-    margin-top: 68px;
-}
-
-.feed-superhero-title2 {
-    padding-top: 7px;
-    line-height: 44px;
-    font-size: 32px;
-    font-weight: 400;
-    margin: 0;
-}
-
-.collaborating {
-    font-size: 16px;
-    line-height: 24px;
-    margin-top: 60px;
-    width: 264px;
-}
-
-.offering {
-    font-size: 16px;
-    line-height: 24px;
-    width: 264px;
-}
-
-.features {
-    padding: 0;
-    font-size: 16px;
-    line-height: 24px;
-    list-style: none;
-}
-    .special-child-container {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-}
-
-.special-child-container img {
-    margin-top: 54px;
-    width: 320px;
-    height: 400px;
-}
-
-.special-child-info {
-    padding-left: 15px;
-}
-
-.special-child-title1 {
-    margin-top: 64px;
-    font-size: 11px;
-    font-weight: 400;
-    letter-spacing: 1.4px;
-}
-
-.special-child-title2 {
-    margin: 0%;
-    padding-top: 8px;
-    font-size: 22px;
-    font-weight: 400;
-}
-
-.customizing {
-    width: 264px;
-    margin-top: 50px;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.fill-out {
-    font-size: 16px;
-}
-    .care-about-kids-info button {
-    margin: 0%;
-    margin-top: 28px;
-    text-align: left;
-    padding-left: 33px;
-    width: 260px;
-    height: 60px;
-    border-color: black;
-    border-width: 1px;
-    border-radius: 40px;
-    background-color: white;
-    font-size: 15px;
-}
-
-.care-about-kids-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.care-about-kids-container img {
-    margin-top: 64px;
-    height: 400px;
-    width: 320px;
-}
-
-.care-about-kids-info {
-    padding-left: 15px;
-}
-
-.care-about-kids-title1 {
-    margin-top: 66px;
-    font-size: 11px;
-    font-weight: 400;
-    letter-spacing: 1.4px;
-}
-
-.care-about-kids-title2 {
-    margin: 0%;
-    margin-top: 16px;
-    font-size: 30px;
-    font-weight: 400;
-}
-
-.care-about-kids-info p {
-    width: 264px;
-    margin-top: 52px;
-    font-size: 16px;
-    line-height: 24px;
-}
-.first-two-main-features {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-}
-
-.mark img {
-    width: 24px;
-}
-
-.perfection {
-    margin: 0%;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-.delicious-and-healthy {
-    margin-top: 10px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-.perfection h2 {
-    margin: 0%;
-    margin-top: 10px;
-    font-size: 29px;
-    font-weight: 400;
-}
-
-.delicious-and-healthy h2 {
-    font-size: 29px;
-    font-weight: 400;
-}
-
-.perfection p {
-    margin: 0%;
-    margin-bottom: 40px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-.delicious-and-healthy p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-}
-.best-thing {
-    margin: 0%;
-    margin-top: 32px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-.best-thing h2 {
-    font-size: 29px;
-    font-weight: 400;
-}
-
-.best-thing p {
-    font-size: 16px;
-    line-height: 24px;
-}
-.super-community {
-    width: 320px;
-    background-color: #306aff;
-    margin-top: 55px;
-    height: 258px;
-    background-size: cover;
-    text-align: center;
-    justify-self: center;
-}
-
-.super-community h2 {
-    padding-top: 100px;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 1.4px;
-}
-
-.super-community p {
-    font-size: 22px;
-    font-weight: 400;
-    margin: 0%;
-    padding-top: 4px;
-}
-.help {
-    width: 320px;
-    margin-left: 20px;
-}
-
-.help h2 {
-    margin-top: 82px;
-    font-size: 11px;
-    font-weight: 400;
-    letter-spacing: 1.4px;
-}
-
-.p1 {
-    font-size: 18px;
-    letter-spacing: 0.48px;
-    margin: 0%;
-    margin-top: 18px;
-}
-
-.post {
-    font-size: 16px;
-    margin-top: 58px;
-}
-
-.p2 {
-    font-size: 15px;
-    margin-top: 26px;
-    margin-bottom: 93px;
-}
-.empower {
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-.empower h2 {
-    margin-top: 60px;
-    font-size: 22px;
-    font-weight: 400;
-}
-
-.empower p {
-    padding-top: 12px;
-    margin: 0 auto;
-    font-size: 22px;
-    width: 258px;
-}
-
-.empower button {
-    margin: 0%;
-    margin-top: 36px;
-    width: 258px;
-    height: 58px;
-    border-color: black;
-    border-width: 1px;
-    border-radius: 40px;
-    background-color: white;
-    font-size: 15px;
-}
-.footer {
-    max-width: 320px;
-}
-
-.text-footer-div {
-    margin: 0%;
-    margin-top: 92px;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-title {
-    width: 165px;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-}
-
-.footer-div1 p {
-    font-size: 16px;
-    margin-top: 30px;
-    line-height: 24px;
-}
-
-.footer-div1 img {
-    margin-top: 10px;
-    width: 100px;
-}
-
-.footer-social {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    gap: 28px;
-}
-
-.footer-social img {
-    width: 20px;
-}
-
-.footer-div2 {
-    margin: 0%;
-    margin-top: 70px;
-}
-
-.footer-div2 p {
-    font-size: 16px;
-    margin-top: 1px;
-}
-
-.footer-div3 {
-    margin: 0%;
-    margin-top: 40px;
-}
-
-.stay-tuned {
-    font-size: 16px;
-}
-
-.sign-up {
-    font-size: 16px;
-    width: 226px;
-    margin-top: 26px;
-    line-height: 24px;
-}
-
-.footer-div4 {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-div4 p {
-    width: 169px;
-    margin: 0%;
-    margin-left: 20px;
-    margin-top: 50px;
-    font-size: 13px;
-}
-
-.footer-cards {
-    padding-top: 58px;
-    padding-left: 134px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 5px;
-}
-
-.footer-cards img {
-    width: 40px;
-    height: 25px;
-}
-
-}
+    .mark img {
+        width: 14px;
+        height: 14px;
+    }
 }
