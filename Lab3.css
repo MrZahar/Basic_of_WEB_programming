@@ -71,6 +71,12 @@ h1, h2, h3, p, button, a {
     font-size: 15px;
     width: 260px;
     height: 58px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.start-now:hover {
+    transform: scale(1.05); 
 }
 
 /* Offer Section with Rectangle */
