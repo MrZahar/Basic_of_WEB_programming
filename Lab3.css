@@ -336,6 +336,13 @@ h1, h2, h3, p, button, a {
 .step1 img, .step2 img, .step3 img {
     width: 100%;
     margin-bottom: 15px;
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.step1 img:hover, 
+.step2 img:hover, 
+.step3 img:hover {
+    width: 105%;
 }
 
 .step3 button {
