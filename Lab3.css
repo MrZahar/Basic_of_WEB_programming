@@ -300,6 +300,15 @@ h1, h2, h3, p, button, a {
     padding: 12px 28px;
     border-radius: 40px;
     font-weight: 400;
+    font-size: 15px;
+    height: 58px;
+    width: 177px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.join-waitlist:hover {
+    transform: scale(1.05); 
 }
 
 .location-container img {
